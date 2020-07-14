@@ -1,0 +1,117 @@
+body{
+    background-color: #7df5c5;
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrap{
+    margin-left: 10%;    
+    margin-right: 10%;    
+
+}
+.menu{
+    text-align: center;
+}
+
+
+/* this is the first article */
+.article1{
+    border: 2px solid black;
+    background-color: cornflowerblue;
+    margin-top: 20px;
+}
+.chicken{
+    border: 2px solid black;
+    display: block;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: darkgoldenrod;
+    float: right;
+    clear: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.para{
+    clear: both;
+    padding: 4% 5%;
+    margin: 0px;
+}
+
+/* this is the second article */
+.article2{
+    border: 2px solid black;
+    background-color: #cf70ff;
+    margin-top: 20px;
+}
+.chicken2{
+    border: 2px solid black;
+    display: block;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #ef2929;
+    float: right;
+    clear: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.para2{
+    clear: both;
+    padding: 4% 5%;
+    margin: 0px;
+}
+
+
+/* This is the third article */
+.article3{
+    border: 2px solid black;
+    background-color: #fdb244;
+    margin-top: 20px;
+}
+.chicken3{
+    border: 2px solid black;
+    display: block;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #5debfd;
+    float: right;
+    clear: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.para3{
+    clear: both;
+    padding: 4% 5%;
+    margin: 0px;
+}
+/* here comes the media queries */
+/* desktop */
+@media (min-width: 992px){
+    .article1, .article2, .article3{
+        width: 27.6%;
+        float: left;
+        margin: 2%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    body{
+        box-sizing: border-box;
+    }
+    .article1, .article2{
+        width: 48%;
+        box-sizing: border-box;
+        float: left;
+        margin-bottom: 20px;
+    }
+    .article2{
+        float: left;
+        margin-left: 2%;
+    }
+    .article1{
+        margin-right: 2%;
+    }
+    .article3{
+        clear: both;
+        /* margin-top: 15rem; */
+    }
+
+}
